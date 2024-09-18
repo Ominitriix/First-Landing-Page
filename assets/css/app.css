@@ -1,0 +1,32 @@
+#app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding-inline: 15%;
+}
+
+@media screen and (max-width: 900px) {
+  #app {
+    padding: 5%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .definitions-app {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #app {
+    padding: 5%;
+    gap: 1rem;
+  }
+
+  .definitions-app {
+    width: 100%;
+    height: auto;
+  }
+}

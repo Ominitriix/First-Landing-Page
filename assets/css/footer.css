@@ -1,0 +1,135 @@
+.flex-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-inline: 15%;
+  background-color: rgba(55, 80, 224, 0.132);
+}
+
+.definitions-footer {
+  width: 100%;
+  display: flex;
+  gap: 8rem;
+}
+
+.definitions-footer .footer-header {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+}
+
+.definitions-footer .footer-header ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.definitions-footer .footer-header li a {
+  font-size: 1.4em;
+  display: grid;
+  place-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  outline: 2px solid transparent;
+  outline-offset: -1rem;
+  border-radius: 50%;
+  transition:
+    color 300ms ease,
+    outline-color 300ms ease,
+    outline-offset 300ms ease;
+}
+
+.definitions-footer .footer-header li a:hover,
+.definitions-footer .footer-header li a:active,
+.definitions-footer .footer-header li a:hover i,
+.definitions-footer .footer-header li a:active i {
+  color: var(--color-primary);
+  outline-color: var(--color-primary);
+  outline-offset: -2px;
+}
+
+.definitions-footer .list-footer h3 {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 1.3em;
+  font-variant-caps: all-petite-caps;
+}
+
+.definitions-footer .list-footer li a {
+  color: var(--color-txt);
+  font-size: 0.9em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem 0;
+  transition: color 300ms ease;
+}
+
+.definitions-footer .list-footer li a i {
+  color: var(--color-txt);
+  font-size: 1.4em;
+  transition: color 300ms ease;
+}
+
+.definitions-footer .list-footer li a:hover,
+.definitions-footer .list-footer li a:active,
+.definitions-footer .list-footer li a:hover i,
+.definitions-footer .list-footer li a:active i {
+  color: var(--color-primary);
+}
+
+.definitions-footer a img {
+  width: 110px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
+
+.flex-footer .image-ilustration {
+  width: 250px;
+  height: 200px;
+}
+
+@media screen and (max-width: 900px) {
+  #footer .flex-footer {
+    padding: 5% 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .definitions-footer {
+    justify-content: center;
+  }
+  .flex-footer .image-ilustration {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #footer .flex-footer {
+    flex-direction: column;
+    padding: 50px 0 !important;
+  }
+
+  .definitions-footer {
+    height: auto;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .definitions-footer .footer-header li a {
+    font-size: 2em;
+  }
+
+  .definitions-footer .list-footer h3 {
+    font-size: 1.6em;
+  }
+
+  .definitions-footer .list-footer li a {
+    justify-content: center;
+    font-size: 1.1em;
+    padding: 0.4em 0;
+  }
+}
